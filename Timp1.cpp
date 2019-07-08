@@ -2,9 +2,10 @@
 #include <iostream>
 using namespace std;
 
+int h1, m1, xH, yM, h2, m2, hTemp, mTemp;
+
 int main()
 {
-    int h1, m1, xH, yM, h2, m2, hTemp, mTemp;
     cin >> h1 >> m1 >> xH >> yM;
 
     mTemp = m1 + yM;
