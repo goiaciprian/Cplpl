@@ -1,0 +1,18 @@
+// media patratica.cpp
+#include <iostream>
+using namespace std;
+
+int n, sum;
+
+int main()
+{
+	cin >> x;
+	
+	for(int i=1; i <= n; i++)
+	{
+		sum += i*i;
+	}
+
+	cout << sum;
+	return 0;
+}
