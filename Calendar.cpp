@@ -1,4 +1,4 @@
-/*Calendar.cpp -- PbIndo -- ;
+/*Calendar.cpp -- PbIndo -- 90 pct;
 
 Cerinţa
 Se citesc 3 numere naturale z l a. Să se decidă dacă reprezintă o
