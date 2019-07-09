@@ -33,57 +33,82 @@ int main()
     cin >> z >> l >> an;
 
     switch (l)
-        {
-        case 1:
-            if(z>31) cout << "NU";
-            else cout << "DA";
-            break;
-        case 2:
-            if((z>29) && (( an % 4 == 0 && an % 100 != 0 ) || an % 400 == 0 )) cout << "NU";
-            else if((z>28) && ((an % 4 != 0 && an % 200 ==0) || an % 400 != 0)) cout << "NU";
-            else cout << "DA";
-            break;
-        case 3:
-            if(z>31) cout << "NU";
-            else cout << "DA";
-            break;
-        case 4:
-            if(z>30) cout << "NU";
-            else cout << "DA";
-            break;
-        case 5:
-            if(z>31) cout << "NU";
-            else cout << "DA";
-            break;
-        case 6:
-            if(z>30) cout << "NU";
-            else cout << "DA";
-            break;
-        case 7:
-            if (z >31) cout << "NU";
-            else cout << "DA";
-            break;
-        case 8:
-            if(z>31) cout << "NU";
-            else cout << "DA";
-            break;
-        case 9:
-            if(z>30) cout << "NU";
-            else cout << "DA";
-            break;
-        case 10:
-            if(z>31) cout << "NU";
-            else cout << "DA";
-            break;
-        case 11:
-            if (z>30) cout << "NU";
-            else cout << "DA";
-            break;
-        case 12:
-            if (z>31) cout << "NU";
-            else cout << "DA";
-            break;
-        }
+    {
+    case 1:
+        if (z > 31)
+            cout << "NU";
+        else
+            cout << "DA";
+        break;
+    case 2:
+        if ((z > 29) && ((an % 4 == 0 && an % 100 != 0) || an % 400 == 0))
+            cout << "NU";
+        else if ((z > 28) && ((an % 4 != 0 && an % 200 == 0) || an % 400 != 0))
+            cout << "NU";
+        else
+            cout << "DA";
+        break;
+    case 3:
+        if (z > 31)
+            cout << "NU";
+        else
+            cout << "DA";
+        break;
+    case 4:
+        if (z > 30)
+            cout << "NU";
+        else
+            cout << "DA";
+        break;
+    case 5:
+        if (z > 31)
+            cout << "NU";
+        else
+            cout << "DA";
+        break;
+    case 6:
+        if (z > 30)
+            cout << "NU";
+        else
+            cout << "DA";
+        break;
+    case 7:
+        if (z > 31)
+            cout << "NU";
+        else
+            cout << "DA";
+        break;
+    case 8:
+        if (z > 31)
+            cout << "NU";
+        else
+            cout << "DA";
+        break;
+    case 9:
+        if (z > 30)
+            cout << "NU";
+        else
+            cout << "DA";
+        break;
+    case 10:
+        if (z > 31)
+            cout << "NU";
+        else
+            cout << "DA";
+        break;
+    case 11:
+        if (z > 30)
+            cout << "NU";
+        else
+            cout << "DA";
+        break;
+    case 12:
+        if (z > 31)
+            cout << "NU";
+        else
+            cout << "DA";
+        break;
+    }
 
     return 0;
 }
