@@ -1,4 +1,4 @@
-/*CifreComune.cpp -- PbInfo -- ;
+/*CifreComune.cpp -- PbInfo -- 100;
 
 Cerinţa
 Se citesc două numere naturale n m cu exact două cifre fiecare. Să se decidă dacă cele două numere au cifre comune.
@@ -20,3 +20,24 @@ Ieșire
 
 da
  */
+
+#include <iostream>
+using namespace std;
+
+int m, n, a, b;
+
+int main()
+{
+    cin >> m >> n;
+
+    a = m/10;
+    b = m%10;
+    m = n/10;
+    n %= 10;
+
+    if((a==m) || (a==n)) {cout << "da";return 0;}
+    else if((b==m) || (b==n)) {cout << "da";return 0;}
+    else cout << "nu";
+
+    return 0;
+}
