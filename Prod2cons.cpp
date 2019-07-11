@@ -1,4 +1,4 @@
-/*Prod2cons.cpp -- PbInfo -- ;
+/*Prod2cons.cpp -- PbInfo -- 100;
 
 Cerinţa
 Se citește un număr natural n. Să se stabilească
