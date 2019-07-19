@@ -7,7 +7,8 @@
                 "/mnt/c/Python/include",
                 "/mnt/c/Python",
                 "/usr/include/linux",
-                "/usr/lib/gcc/x86_64-linux-gnu/7/include"
+                "/usr/lib/gcc/x86_64-linux-gnu/7/include",
+                "/mnt/c/MinGW/include"
             ],
             "defines": [
                 "_DEBUG",
@@ -26,7 +27,8 @@
                 "/mnt/c/Python/include",
                 "/mnt/c/Python",
                 "/usr/include/linux",
-                "/usr/lib/gcc/x86_64-linux-gnu/7/include"
+                "/usr/lib/gcc/x86_64-linux-gnu/7/include",
+                "/mnt/c/MinGW/include"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
