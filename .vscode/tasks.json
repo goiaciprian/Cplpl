@@ -1,0 +1,24 @@
+{
+  "tasks": [
+    {
+      "type": "shell",
+      "label": "g++.exe build active file",
+      "command": "g++.exe",
+      "args": [
+        "-Wall",
+        "-g",
+        "-o",
+        "${fileBasenameNoExtension}.exe",
+        "${fileBasenameNoExtension}.cpp",
+      ],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ],
+  "version": "2.0.0"
+}

@@ -1,0 +1,39 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/mnt/c/Python/include",
+                "/mnt/c/Python",
+                "/usr/include/linux",
+                "/usr/lib/gcc/x86_64-linux-gnu/7/include"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "/usr/bin/gcc",
+            "intelliSenseMode": "gcc-x64",
+            "cppStandard": "c++17",
+            "cStandard": "c11"
+        },
+        {
+            "name": "linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/mnt/c/Python/include",
+                "/mnt/c/Python",
+                "/usr/include/linux",
+                "/usr/lib/gcc/x86_64-linux-gnu/7/include"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "intelliSenseMode": "clang-x64",
+            "cppStandard": "c++17",
+            "cStandard": "c11"
+        }
+    ],
+    "version": 4
+}
