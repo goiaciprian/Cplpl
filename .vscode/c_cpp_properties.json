@@ -28,10 +28,7 @@
                 "/mnt/c/Python",
                 "/usr/include/linux",
                 "/usr/lib/gcc/x86_64-linux-gnu/7/include",
-                "/mnt/c/MinGW/include",
-                "/mnt/d/SDK/10/Include/10.0.18362.0/um",
-                "/mnt/d/SDK/10/Include/10.0.18362.0",
-                "/mnt/d/SDK/10/Include/10.0.18362.0/shared"
+                "/mnt/c/MinGW/include"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
