@@ -1,4 +1,4 @@
-/*ec2.cpp -- PbInfo -- ;
+/*ec2.cpp -- PbInfo -- 100;
 Cerința
 Se citesc de la tastatura 3 valori reale a, b , c. Rezolvați ecuația de gradul doi cu a*x2+b*x+c=0
 
@@ -38,7 +38,7 @@ Nu are solutii reale
 */
 
 #include <iostream>
-#include <math.h>
+#include <cmath>
 #include <iomanip>
 using namespace std;
 
