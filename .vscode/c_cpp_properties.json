@@ -28,11 +28,14 @@
                 "/mnt/c/Python",
                 "/usr/include/linux",
                 "/usr/lib/gcc/x86_64-linux-gnu/7/include",
-                "/mnt/c/MinGW/include"
+                "/mnt/c/MinGW/include",
+                "/mnt/d/SDK/10/Include/10.0.18362.0/um",
+                "/mnt/d/SDK/10/Include/10.0.18362.0",
+                "/mnt/d/SDK/10/Include/10.0.18362.0/shared"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
-            "intelliSenseMode": "clang-x64",
+            "intelliSenseMode": "gcc-x64",
             "cppStandard": "c++17",
             "cStandard": "c11"
         }
