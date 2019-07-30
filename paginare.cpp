@@ -43,41 +43,6 @@ int n, c, cvNumarMagic = 792;
 
 int main()
 {
-    // cin >> n;
-    // if (n % cvNumarMagic) { v = n / cvNumarMagic; v = 300;}
-    // else
-    // {
-    //     v = n / cvNumarMagic + 1;
-    //     n %= cvNumarMagic;
-    //     p = 0;
-    //     if (n<10) { p += n; n = 0; }
-    //     else 
-    //     {
-    //         n -= 9;
-    //         p += 9;
-    //     }
-    // }
-
-    // if ( n <= 2 * 90)
-    // {
-    //     if ( n % 2 == 0)
-    //     {
-    //         p += n;
-    //         n = 0;
-    //     }
-    //     else ok = false;
-    // }
-    // else
-    // {
-    //      p += 90;
-    //      n -= 2 * 90;
-    // }
-
-    // if (n % 3 != 0) ok = false;
-    // else p += n/3;
-
-    // if (ok) cout << v << " " << p;
-    // else cout << "IMPOSIBIL";
     cin >> n;
     c = n % cvNumarMagic;
      
