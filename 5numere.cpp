@@ -34,7 +34,7 @@ int prim, doi, trei, rezultat;
 
 void LOG(int param[])
 {
-    for (int i = 0; i < sizeof(cinciElem)/sizeof(cinciElem[0]); i++)
+    for (unsigned int i = 0; i < sizeof(cinciElem)/sizeof(cinciElem[0]); i++)
     {
         std::cout<<param[i]<<std::endl;
     }
