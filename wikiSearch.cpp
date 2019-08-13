@@ -2,10 +2,10 @@
 #include <string>
 #include <vector>
 #include <sstream>
+#include <curl>
 using namespace std;
 
-string wikiAnswer(string searchWord)
-{
+string wikiAnswer(string searchWord) {
     stringstream line = (stringstream)searchWord;
     string temp, searchLine;
     vector<string> words;
@@ -13,20 +13,14 @@ string wikiAnswer(string searchWord)
 
     const char delim = ' ';
 
-    while(getline(line, temp, delim))
-    {
+    while(getline(line, temp, delim)) {
         words.push_back(temp);
     }
-
-    for(auto word: words)
-    {
-        if(word != words[0])
-        {
+    for(auto word: words) {
+        if(word != words[0]) {
             string tempo = "_" + word;
             searchLine += tempo;
-        }
-        else
-        {
+        } else {
             searchLine += word;
         }
     }
@@ -37,17 +31,13 @@ string wikiAnswer(string searchWord)
 };
 
 
-int main(int argc, char* argv[])
-{
-    try
-    {
+int main(int argc, char* argv[]) {
+    try {
         if(not argv[1]) { throw 1;}
         string test = wikiAnswer(argv[1]);
         cout << test;
-    }
-    catch(int x)
-    {
-        cout << "Syntax: wikiSearch.exe <searchWord> " << x << endl;;
+    } catch(int) {
+        cout << "Syntax: wikiSearch.exe <searchWord> " << endl;;
     }
 
     return 0;
