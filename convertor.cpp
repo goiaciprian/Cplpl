@@ -7,7 +7,6 @@ Algoritm care face conversia banilor din euro in lei si imparte leii in bancnote
 #include <iostream>
 #include <stdlib.h> //atof
 #include <fstream>
-#include <string>
 
 using namespace std;
 
