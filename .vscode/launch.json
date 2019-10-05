@@ -8,27 +8,18 @@
       "name": "(gdb) Pipe Launch",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${workspaceFolder}/${fileBasenameNoExtension}.exe",
-      "args": [],
+      "program": "${workspaceFolder}\\${fileBasenameNoExtension}.exe",
+      "args": [""],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}",
       "environment": [],
       "externalConsole": false,
-      "windows": {
-        "MIMode": "gdb",
-        "setupCommands": [
-          {
-            "description": "Enable pretty-printing for gdb",
-            "text": "-enable-pretty-printing",
-            "ignoreFailures": true
-          }
-        ]
-      },
+
       "pipeTransport": {
         "debuggerPath": "/usr/bin/gdb",
-        "pipeProgram": "/bin/bash",
+        "pipeProgram": "bash.exe",
         "pipeArgs": ["-c"],
-        "pipeCwd": ""
+        "pipeCwd": "${workspaceFolder}"   
       },
       "MIMode": "gdb",
       "setupCommands": [
@@ -39,25 +30,26 @@
         }
       ],
       "sourceFileMap": {
-        "/mnt/c": "c:\\",
-        "/mnt/d": "d:\\"
+        "/mnt/c": "${env:systemdrive}\\",
+        "/mnt/d": "D:\\",
+        "/usr": "C:\\Users\\camio"
       },
-      "preLaunchTask": "g++.exe build active file",
+      "preLaunchTask": "g++ build active file",
       "targetArchitecture": "x86_64"
     },
 
     {
-      "name": "g++.exe build and debug active file",
+      "name": "g++.exe build and debug windows",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${fileDirname}/${fileBasenameNoExtension}.cpp",
+      "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
       "args": [],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}",
       "environment": [],
-      "externalConsole": true,
+      "externalConsole": false,
       "MIMode": "gdb",
-      "miDebuggerPath": "/mnt/c/MinGW/bin/gdb.exe",
+      "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
       "setupCommands": [
         {
           "description": "Enable pretty-printing for gdb",
@@ -65,8 +57,31 @@
           "ignoreFailures": true
         }
       ],
-      "preLaunchTask": "g++.exe build active file",
+      "preLaunchTask": "g++ build active file",
       "targetArchitecture": "x86_64"
+    },
+
+    {
+      "name": "g++.exe build and debug wsl",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "miDebuggerPath": "/usr/bin/gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "g++ build active file",
+      "targetArchitecture": "i386:x86_64"
     }
   ]
 }
